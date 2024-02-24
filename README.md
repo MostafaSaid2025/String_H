@@ -1,1 +1,3 @@
 # String_H
+
+This repository contains a custom implementation of the String.h library in C programming language. The String.h library provides a set of functions for manipulating strings, such as copying, concatenating, and comparing strings. This implementation aims to provide a clear and efficient set of functions with well-commented code for easy understanding and modification. By exploring this repository, developers can gain insights into the inner workings of string manipulation functions and learn how to implement their own custom string library. Contributions and feedback are welcome to improve the functionality and performance of this implementation.
