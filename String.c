@@ -197,22 +197,19 @@ char  *my_strncpy(char *dest, const char *src, size_t n)
     return dest;
 }
 
-size_t my_strcspn(const char *str1, const char *str2) //problem
-{
-    unsigned int Number = 0;
-    unsigned int length1 = strlen(str1) , length2 = strlen(str2);
-    unsigned int ret = length1-1;
-    for (int counter1 = 0 ; counter1 < length1 ; counter1++)
-    {
-        for(int counter2 = 0 ; counter2 < length2 ; counter2++)
-        {
-            if (str1[counter1] == str2[counter2])
-            {
-                ret--;
-                break;
+size_t my_strcspn(const char *str1, const char *str2) {
+    size_t ret = 0;
+    size_t length1 = strlen(str1), length2 = strlen(str2);
+    
+    for (size_t counter1 = 0; counter1 < length1; counter1++) {
+        for (size_t counter2 = 0; counter2 < length2; counter2++) {
+            if (str1[counter1] == str2[counter2]) {
+                return ret;
             }
         }
+        ret++;
     }
+    
     return ret;
 }
 
